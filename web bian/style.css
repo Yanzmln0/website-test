@@ -1,0 +1,144 @@
+* html {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    font: 16px/1.6 arial, sans-serif;
+  }
+  
+  nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  nav div img {
+    width:50px;
+    
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #191919;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(255, 0, 0, 0)
+  }
+  
+  nav ul li a:hover {
+    color: orangered;
+    border-bottom: 1px solid orangered;
+  }
+
+  .menu-icon {
+    /* background-color: tomato; */
+    font-size: 28px;
+    display: none;
+  }
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.footer {
+  background-color: #04a18;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 768px) {
+
+  nav {
+    flex-wrap: wrap;
+
+}
+
+nav ul {
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-icon {
+display: flex;
+align-items: center;
+}
+
+  .footer h3 {
+    color: #f5f5f5;
+    margin: 0;
+    padding-bottom: 20%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .footer .footer-left img {
+    width: 25%;
+    vertical-align: middle;
+  }
+
+  .footer .footer-left .sponsored {
+    width: 100%;
+  }
+
+  .footer .footer-copyright {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
+  }
+
+  footer {
+    position:static ;
+  }
+  header {
+    padding-top: 40%;
+  }
+
+  .footer .footer-left {
+    width: 30%;
+  }
+
+}
+
+header {
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 190px;
+} 
+
+header h1 {
+  font: normal 32px/1.5 'OpenSans',sans-serif;
+  color: greenyellow;
+  padding-top: 16px;
+}
+
+header h2 {
+  color: #000000;
+  font-size: 30px;
+}
